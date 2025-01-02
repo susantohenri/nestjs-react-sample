@@ -4,6 +4,7 @@ import RegisterPage from '../pages/RegisterPage.tsx';
 import ErrorBoundary from '../components/ErrorBoundary.tsx';
 import DashboardPage from '../pages/DashboardPage.tsx';
 import ProfilePage from '../pages/ProfilePage.tsx';
+import UserPage from '@/pages/UserPage.tsx';
 import {
   Route,
   RouterProvider,
@@ -41,6 +42,7 @@ const Routes = () => {
             element={<DashboardPage />}
           />
           <Route path="/profile/:userId" element={<ProfilePage />} />
+          <Route path="/user" element={<UserPage />} />
           <Route path="/boards/:boardId" element={<BoardPage />} />
         </Route>
       </>
